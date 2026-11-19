@@ -8,6 +8,6 @@ Separate practice website for the TalentHub Recruiters SEO internship. It is NOT
 3. The repository root is published through GitHub Pages.
 
 ## Included
-1 homepage, 1 all-jobs hub, 5 category pages, 14 job pages, 4 information pages, CSS, JavaScript, robots, sitemap, redirects, audit matrix, crawl plan and decision log. Each category page has four working filters and eight controlled crawlable filtered links.
+1 homepage, 1 all-jobs hub, 5 category pages, 15 job pages, 4 information pages, CSS, JavaScript, robots, sitemap, redirects, audit matrix, crawl plan and decision log. Each category page has four working filters and eight controlled crawlable filtered links.
 
 Important: several technical issues are deliberately seeded for practice. Verify each with Screaming Frog/source evidence before reporting. Do not describe practice-site findings as defects on the client's real website.
