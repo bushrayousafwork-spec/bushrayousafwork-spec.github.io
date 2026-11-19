@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://bushrayousafwork-spec.github.io/</loc></url>
-<url><loc>https://bushrayousafwork-spec.github.io/jobs/</loc></url>
-<url><loc>https://bushrayousafwork-spec.github.io/categories/technology/</loc></url>
-<url><loc>https://bushrayousafwork-spec.github.io/categories/marketing/</loc></url>
-<url><loc>https://bushrayousafwork-spec.github.io/categories/design/</loc></url>
-<url><loc>https://bushrayousafwork-spec.github.io/categories/finance/</loc></url>
-<url><loc>https://bushrayousafwork-spec.github.io/categories/customer-support/</loc></url>
+
+  <!-- Homepage -->
+  <url><loc>https://bushrayousafwork-spec.github.io/</loc></url>
+
+  <!-- All Jobs -->
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/</loc></url>
+
+  <!-- Categories -->
+  <url><loc>https://bushrayousafwork-spec.github.io/categories/technology/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/categories/marketing/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/categories/design/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/categories/finance/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/categories/customer-support/</loc></url>
+
+  <!-- Job Detail Pages -->
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/accounts-officer/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/call-center-representative/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/content-writer/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/customer-success-specialist/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/customer-support-agent/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/financial-analyst/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/frontend-developer/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/graphic-designer/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/payroll-assistant/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/product-designer/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/seo-content-specialist/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/seo-executive/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/social-media-manager/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/ui-ux-designer/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/jobs/wordpress-developer/</loc></url>
+
+  <!-- Information Pages -->
+  <url><loc>https://bushrayousafwork-spec.github.io/about/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/career-advice/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/contact/</loc></url>
+  <url><loc>https://bushrayousafwork-spec.github.io/privacy/</loc></url>
+
 </urlset>
