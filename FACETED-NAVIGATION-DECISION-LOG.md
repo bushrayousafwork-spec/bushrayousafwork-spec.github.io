@@ -148,21 +148,16 @@ The five clean category pages remain the preferred indexable versions.
 
 Final Decision: Canonicalisation of parameter-based filtered URLs.
 
-Status: Implemented and verified.
+Status: Implemented and verified across all 40 filtered URLs.
+
+All 40 filtered parameter URLs were checked in the latest Screaming Frog crawl and verified to canonicalise to their corresponding clean parent category URLs.
 
 The decision prioritises canonical consolidation and controlled indexation over independently indexing every filter combination.
 
-This decision should be reviewed if search-demand research identifies valuable long-tail combinations that can support dedicated, unique landing-page content.
+When would this decision be revisited?
+
+This decision would be reviewed if keyword research and Google Search Console performance data identify meaningful search demand for specific filter combinations that can support unique, useful landing-page content.
+
+In that case, dedicated static landing pages with self-referencing canonical tags would be created instead of allowing every parameter combination to be indexed.
 
 Canonical targets should also be rechecked whenever the category filter architecture changes.
-
-8. Evidence
-
-Evidence source: Screaming Frog post-fix crawl and source inspection, 19 November 2026.
-
-Supporting evidence:
-
-- Canonical Audit CSV
-- Post-fix Internal HTML CSV
-- Category filter URL verification
-- Page-source canonical inspection
