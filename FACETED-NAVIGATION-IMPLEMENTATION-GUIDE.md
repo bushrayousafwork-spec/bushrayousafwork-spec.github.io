@@ -52,6 +52,8 @@ Verification: Open a filtered category URL (e.g., /categories/technology/?locati
 
 Important: Filter combinations must never receive their own canonical URLs. All filtered versions of a category point to that category's single clean URL. This consolidates duplicate URL variations and keeps the preferred category URL clear to search engines.
 
+Future rule: Any new filter added to the category pages must follow the same canonical rule. It must not create its own canonical URL or a separate indexable URL. All filtered combinations must remain canonicalized to the clean category URL.
+
 3. Hosting Limitation, Redirect Chain and Noindex
 
 Two test pages were created to demonstrate an intended redirect chain:
