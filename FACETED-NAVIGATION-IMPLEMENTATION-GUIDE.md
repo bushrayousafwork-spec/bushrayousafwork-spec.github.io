@@ -48,6 +48,7 @@ Canonical targets:
 - Marketing: "/categories/marketing/"
 - Customer Support: "/categories/customer-support/"
 - Finance: "/categories/finance/"
+Verification: Open a filtered category URL (e.g., /categories/technology/?location=Remote), view the page source, and confirm that the canonical tag points to https://bushrayousafwork-spec.github.io/categories/technology/.
 
 Important: Filter combinations must never receive their own canonical URLs. All filtered versions of a category point to that category's single clean URL. This consolidates duplicate URL variations and keeps the preferred category URL clear to search engines.
 
