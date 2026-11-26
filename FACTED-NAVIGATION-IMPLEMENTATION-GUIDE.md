@@ -1,0 +1,69 @@
+TalentHub Careers — Faceted Navigation Implementation Guide
+
+Core rule: Allow users to filter jobs through URL parameters, but keep every filtered URL canonicalized to its single clean category URL so filters never become separate indexable pages.
+
+1. How Filtering Works and Which URLs Are Crawlable
+
+The job board provides four filters across five job categories:
+
+- Location ("location")
+- Job Type ("type")
+- Experience Level ("level")
+- Work Mode ("workmode")
+
+The shared JavaScript file "/assets/js/filters.js" reads the selected values, filters matching job cards, updates the result count, and updates the browser URL using query parameters.
+
+Example filtered URL:
+
+"/categories/technology/?location=Remote"
+
+Multiple filters can be combined:
+
+"/categories/technology/?location=Remote&type=Contract"
+
+The implementation supports filter persistence after refresh, Reset functionality, and browser Back/Forward navigation.
+
+Each category includes eight selected filtered links for controlled crawl testing. The five clean category URLs are the crawlable indexable category pages. Filtered variations are accessible to users and can be crawled, but should not be indexed as separate pages. Filtered URLs are excluded from the XML sitemap.
+
+2. Canonical Rule and Duplicate Content Prevention
+
+Each category has one clean, self-referencing canonical URL. All filtered variations must retain that category's clean canonical target.
+
+For example:
+
+Filtered URL:
+
+"/categories/technology/?location=Remote"
+
+Canonical:
+
+<link rel="canonical" href="https://bushrayousafwork-spec.github.io/categories/technology/">
+
+The canonical tag is included directly in the static HTML "<head>" of each category page, not injected by JavaScript.
+
+Canonical targets:
+
+- Technology: "/categories/technology/"
+- Design: "/categories/design/"
+- Marketing: "/categories/marketing/"
+- Customer Support: "/categories/customer-support/"
+- Finance: "/categories/finance/"
+
+Important: Filter combinations must never receive their own canonical URLs. All filtered versions of a category point to that category's single clean URL. This consolidates duplicate URL variations and keeps the preferred category URL clear to search engines.
+
+3. Hosting Limitation, Redirect Chain and Noindex
+
+Two test pages were created to demonstrate an intended redirect chain:
+
+/old-job/ → /temporary-job/ → /jobs/seo-executive/
+             301                    301
+
+The intended rules are documented in the repository's "_redirects" configuration. However, the project is hosted on GitHub Pages, which does not natively process Netlify-style "_redirects" rules or "netlify.toml". Therefore, these redirects are not live. Both test URLs currently return their own HTML pages with HTTP 200 responses.
+
+To prevent these test pages from being indexed, both contain:
+
+<meta name="robots" content="noindex,follow">
+
+Both URLs are excluded from the XML sitemap, and the noindex directives have been verified in their live HTML source.
+
+On a hosting platform that supports real HTTP 301 redirects, configure the redirect chain and remove the noindex directives. The redirects should then send users and search engines directly through to the final destination.
