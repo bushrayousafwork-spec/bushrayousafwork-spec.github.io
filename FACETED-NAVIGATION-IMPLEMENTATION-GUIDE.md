@@ -69,4 +69,4 @@ To prevent these test pages from being indexed, both contain:
 
 Both URLs are excluded from the XML sitemap, and the noindex directives have been verified in their live HTML source.
 
-On a hosting platform that supports real HTTP 301 redirects, configure the redirect chain and remove the noindex directives. The redirects should then send users and search engines directly through to the final destination.
+While the site remains hosted on GitHub Pages, keep the noindex directives on both test pages because the platform does not serve the configured HTTP 301 redirects. Only replace the noindex directives with the redirect chain when the site is hosted on a platform that supports and serves real HTTP 301 redirects.
