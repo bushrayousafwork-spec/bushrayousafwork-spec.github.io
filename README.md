@@ -8,7 +8,7 @@ Separate practice website for the TalentHub Recruiters SEO internship. It is NOT
 3. The repository root is published through GitHub Pages.
 
 ## Included
-1 homepage, 1 all-jobs hub, 5 category pages, 15 job pages, 4 information pages, CSS, JavaScript, robots, sitemap, redirect configuration (not active on GitHub Pages; both redirect test pages use noindex, follow and are excluded from the sitemap),audit matrix, crawl plan and decision log. Each category page has four working filters and eight controlled crawlable filtered links.
+1 homepage, 1 all-jobs hub, 5 category pages, 15 job pages, 4 information pages, CSS, JavaScript, robots, sitemap, redirect configuration (not active on GitHub Pages; both redirect test pages use noindex, follow and are excluded from the sitemap),audit matrix, crawl plan and decision log. Each category page has four working filters and eight temporary filtered test links per category for controlled Screaming Frog crawling, to be removed after testing.
 
 Important: several technical issues are deliberately seeded for practice. Verify each with Screaming Frog/source evidence before reporting. Do not describe practice-site findings as defects on the client's real website.
 Implementation Guide: "Faceted Navigation Implementation Guide" (FACETED-NAVIGATION-IMPLEMENTATION-GUIDE.md)
